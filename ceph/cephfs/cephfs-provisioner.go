@@ -131,7 +131,7 @@ func (p *cephFSProvisioner) Provision(options controller.VolumeOptions) (*v1.Per
 		// create random share name
 		share = fmt.Sprintf("kubernetes-dynamic-pvc-%s", uuid.NewUUID())
 		// create random user id
-		user = fmt.Sprintf("kubernetes-dynamicuser-%s", uuid.NewUUID())
+		user = fmt.Sprintf("kubernetes-dynamic-user-%s", uuid.NewUUID())
 	}
 	// provision share
 	// create cmd
