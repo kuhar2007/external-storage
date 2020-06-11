@@ -375,7 +375,7 @@ func (p *cephFSProvisioner) parsePVSecret(namespace, secretName string) (string,
 }
 
 var (
-	master                        = flag.String("master", "", "Master URL")
+	master                        = flag.String("master", "", "Master URL ***")
 	kubeconfig                    = flag.String("kubeconfig", "", "Absolute path to the kubeconfig")
 	id                            = flag.String("id", "", "Unique provisioner identity")
 	secretNamespace               = flag.String("secret-namespace", "", "Namespace secrets will be created in (default: '', created in each PVC's namespace)")
